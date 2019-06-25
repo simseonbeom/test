@@ -1,0 +1,116 @@
+
+
+
+
+body{
+    background: #fafafa;
+}
+
+
+#container{
+    background: #fafafafa;
+}
+
+
+#header{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    background: white;
+
+}
+
+#header .inner{
+    width: 975px;
+    height: 77px;
+    margin: 0 auto;
+    /*background: rgba(255, 0, 0, 0.51);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#header .logo > a{
+    display: flex;
+}
+#header .sprite_insta_icon{
+    position: relative;
+    margin-right: 30px;
+}
+#header .sprite_insta_icon:after{
+    content: '';
+    width: 1px;
+    height: 28px;
+    background: #000;
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+#header .logo .sprite_write_logo{
+    transform:translateY(-2px);
+}
+#header .search_box{
+    position:relative;
+}
+
+#search_field{/*input*/
+    width: 185px;
+    height: 28px;
+    background: #fafafa;
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    padding: 3px 30px;
+    color:#999;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    outline:none;
+}
+
+#search_field::placeholder{
+    font-size: 0;
+}
+
+#search_field:focus::placeholder{
+    font-size: 14px;
+    text-indent: 10px;
+}
+
+#search_field:focus ~ .fake_field > span:nth-child(1){
+    transform:translateX(-110px);
+}
+#search_field:focus ~ .fake_field > span:nth-child(2){
+    display:none;
+}
+
+
+
+
+#header .fake_field{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    pointer-events: none;
+    color:gray;
+
+}
+
+#header .right_icons{
+    width: 132px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
